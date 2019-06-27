@@ -4,5 +4,9 @@ c = calendar.TextCalendar(calendar.THURSDAY)
 #print(str)
 #for printing calendar
 #4 for april month
-for i in c.itermonthdays(2025, 4):
-	print(i)
+# for i in c.itermonthdays(2025, 4):
+	# print(i)
+# for name in calendar.month_name:
+	# print(name)
+for day in calendar.day_name:
+	print(day)
