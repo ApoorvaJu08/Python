@@ -77,3 +77,11 @@ def display_board(board):
     print("\t", "---------")
     print("\n\t", board[6], '|', board[7], '|', board[8], "\n")
     print("\t", "---------")
+
+def legal_moves(board):
+    """Create list of legal moves"""
+    moves = []
+    for square in range(NUM_SQUARES):
+        if board[square] == EMPTY:
+            moves.append[square]
+    return moves
