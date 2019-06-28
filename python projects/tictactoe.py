@@ -34,3 +34,15 @@ def ask_number(question, low, high):
     while response not in range(low, high):
         response = int(input(question))
     return response
+
+def pieces():
+    go_first = ask_yes_no("Do you require the first move?(y/n):")
+    if go_first == 'y':
+        print("\n Then take the first move. You will need it.")
+        human = X
+        computer = 0
+    else:
+        print("\n Your bravery will be your undoing....I will go first.")
+        computer = X
+        human = 0
+    return computer, human
