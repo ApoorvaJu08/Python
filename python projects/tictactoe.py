@@ -103,3 +103,14 @@ def winner(board):
     if EMPTY not in board:
         return TIE
     return None
+
+def human_move(board, human):
+    """Get human move."""
+    legal = legal_moves(board)
+    move = None
+    while move not in legal:
+        move = ask_number("Where will you move? (0-8):", 0, NUM_SQUARES)
+        if move not in legal:
+            print("\nThat square is already occupied. Choose another.\n")
+    print("Fine....")
+    return move
