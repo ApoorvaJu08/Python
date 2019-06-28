@@ -61,3 +61,10 @@ def pieces():
         computer = X
         human = 0
     return computer, human
+
+def new_board():
+    """Create a new game board"""
+    board = []
+    for square in range(NUM_SQUARES):
+        board.append(EMPTY)
+    return board
