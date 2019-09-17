@@ -40,3 +40,12 @@ for i in range(len(a)):
     else:
         str1 = str1 + a[i]
 print("String after the characters are toggled: ", str1)
+
+#remove vowels
+vowels = ('aeiou')
+a = a.lower()
+for i in a:
+    if i in vowels:
+        a = a.replace(i, "")
+print(a)
+
