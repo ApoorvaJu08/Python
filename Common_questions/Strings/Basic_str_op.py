@@ -23,3 +23,20 @@ if(a == c):
     print("Strings are equal")
 else:
     print("Strings are not equal")
+
+# program to find length of string without using len function
+count = 0
+for i in a:
+    count += 1
+print("length of string is: ", count)
+
+# program to toggle each character in a string without using swapcase
+str1 = ""
+for i in range(len(a)):
+    if a[i] >= "a" and a[i] <= "z":
+        str1 = str1 + chr((ord(a[i])-32))
+    elif a[i] >= "A" and a[i] <= "Z":
+        str1 = str1 + chr((ord(a[i]) + 32))
+    else:
+        str1 = str1 + a[i]
+print("String after the characters are toggled: ", str1)
