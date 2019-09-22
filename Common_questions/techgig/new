@@ -1,0 +1,18 @@
+''' Read input from STDIN. Print your output to STDOUT '''
+    #Use input() to read input from STDIN and use print to write your output to STDOUT
+ASCII_SIZE = 256
+# def main():
+
+for _ in range(int(input())):
+    count = [0] * ASCII_SIZE 
+    max = -1
+    c = ''
+    types = input()
+    for i in types: 
+        count[ord(i)]+=1; 
+
+    for i in types: 
+        if max < count[ord(i)]: 
+            max = count[ord(i)] 
+            c = i 
+    print(c)
